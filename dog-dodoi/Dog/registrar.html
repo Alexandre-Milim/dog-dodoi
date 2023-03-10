@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-se</title>
+</head>
+<body>
+    <header id="header">
+        <figure>
+            <img src="../Dog/img.logo/logo.png" alt="logo">
+        </figure>
+    </header>
+
+<main>
+    <section id="registro">
+        <div id="registrar">
+            <h1>Registrar-se</h1>
+        </div>
+
+        <div id="cadastro-formulario">
+            <form action="">
+                <div>
+                    <label for="Nome">Nome completo</label>
+                    <input 
+                    type="text" 
+                    name="nome-completo" 
+                    id="nome" 
+                    required 
+                    minlength="2"
+                    >
+                </div>
+                <div class="form-formulario-email">
+                    
+                    <label for="email">E-mail</label>
+                    <input 
+                    type="email" 
+                    name="email" 
+                    id="email"
+                    required
+                    >
+                </div>     
+                
+                <div class="form-formulario-nome-usuario">
+                    <label for="usuario">Nome de usuário</label>
+                    <input 
+                    type="user" 
+                    name="usuario" 
+                    id="usuario"
+                    required
+                    minlength="4">
+                </div>
+
+                <div class="form-formulario-senha">
+                    <label for="senha">Criar senha</label>
+                    <input 
+                    type="password" 
+                    name="senha" 
+                    id="senha"
+                    required
+                    minlength="4">
+                </div>
+
+                <div class="form-formulario-confirmar-senha">
+                    <label for="confirmar">Confirmar senha</label>
+                    <input 
+                    type="confirmar" 
+                    name="confirmar" 
+                    id="confirmar"
+                    required
+                    minlength="4">
+                </div>
+
+                <div class="form-formulario-registro">
+                    <button type="submit">Registrar-se</button>
+                </div>
+
+                <div class="form-formulario-possuo-cadastro" id="possuo-cadastro-button">
+                    
+                </div>
+
+                <div class="possuocadastro">
+                    <nav>
+                        <a href="#">Possuo cadastro>></a>
+                    </nav>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+</body>
+</html>

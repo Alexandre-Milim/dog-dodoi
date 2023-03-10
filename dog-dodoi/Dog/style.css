@@ -1,0 +1,177 @@
+/* no Css é necessário as chaves e o ponto e vírgula no final */
+:root{
+    --cor-principal: #EA1C81;
+    --cor-topo: #D8F1FB;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-fundo: #FAFBFF;
+}
+/* apresenta as cores e os códigos delas para trocar facilmente a cor*/
+
+*{
+    margin: 0px;
+    /* margem */
+    padding: 0px;
+    /* espaçamento interno em algo */
+    transition: 0.5s;
+    /* transição não tem mistério */
+    box-sizing: border-box;
+    /* alinha o texto dentro do layout */
+    font-family: 'roboto';
+}
+/* os asteríscos selecionam tudo */
+
+#header{
+    background-color: var(--cor-topo);
+    /* cor de fundo */
+    display: flex;
+    /* permite organizar elementos */
+    justify-content: space-between;
+    /* dá um espaçamento entre os termos */
+    align-items: center;
+    /* alinha tudo no centro */
+}
+/* pra id é usado # mais o nome para conseguir editar */
+
+#header nav a{
+    text-decoration: none;
+    color: var(--cor-preta);
+}
+/* tag de cascata vai de3scendo até onde vc quer */
+
+#header nav a:hover{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 20px;
+    /* borda arredondada fazendo curva */
+    font-weight: 700px;
+    /* espessura da fonte */
+}
+/* hover é quando passa o mouse em cima */
+
+.marginLateral{
+    margin: 0px 20px; 
+}
+/* usa . para editar class */
+
+.margimCimaBaixo {
+    padding: 20px;
+}
+/* cria um espaçamento interno entre coisas */
+
+main #banner{
+    background-image:url("../Dog/img.logo/Banner.png");
+    /* adiciona a imagem de fundo */
+    height: calc(100vh - 120px) ;
+    /* a altura é calculada pelo total menos a soma do valor do valor dentro do retangulo + o de cima e em baixo */
+    background-repeat: no-repeat;
+    /* repete a imagem de fundo */
+    background-position: center center;
+    /* posição da imagem de fundo */
+    background-size: cover;
+    /* tamanho da imagem e cover é para estigar por toda a largura */
+    display: flex;
+    flex-direction: column;
+    /* direção do display */
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-principal)
+}
+
+main #banner button{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 20px;
+}
+
+main #banner button:hover{
+    cursor: pointer;
+    /* quando o cursor passa vira uma mãozinha */
+}
+
+main #banner h1 {
+    color: var(--cor-principal);
+    font-size: 2em;
+    /* Em vai ser uma medida relativa ao dispositivo e em convenção vale 16pt (pontos)*/
+}
+
+#header, main #banner button, #header nav a:hover, #bemVindo div, main #beneficios #beneficios-nossosbeneficios, main #beneficios #beneficios-servicos, #rodape, main #form #form-formulario form{
+    padding: 15px;
+}
+/* aq vc seleciona os itens com o mesmo padding para ficar igual, basta colocar um atrás do outro com vírgulas */
+/* sempre se economiza códigos, não tem motivo para repetir */
+
+#bemVindo {
+    display: grid;
+    /* grid manda a divisória receber uma quantidade de frações*/
+    grid-template-columns: 1fr 1fr;
+    /* número de frações */
+}
+/* oq antes estava um a baixo do outro agora fica um do lado do outro */
+
+#bemVindo #boasVindas h3 {
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+main #beneficios {
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+}
+
+main #beneficios #beneficios-nossosbeneficios,
+main #form,
+main #form #form-texto,
+main #beneficios #beneficios-servicos, 
+#rodape, #form-formulario{
+    text-align: center;
+}
+/* selecionou tudo para alinhar no centro */
+
+main #beneficios #beneficios-servicos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main #form #form-formulario form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #form #form-formulario form input{
+    display: block;
+    padding: 8px;
+    border: none;
+    /* tira a borda mais forte */
+    border-bottom: 1px solid black;
+    /* seleciona 1px em linha reta */
+    border-radius: 10px;
+    width: 400px;
+    /* tamanho da caixa de texto */
+    margin-bottom: 20px;
+}
+
+main #form #form-formulario form button{
+    padding: 10px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 380px;
+    cursor: pointer;
+}
+
+main #form #form-formulario{
+    background-image: url(../Dog/img.logo/dog.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+#rodape{
+    background-color: var(--cor-topo);
+}
+
